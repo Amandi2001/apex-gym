@@ -1,0 +1,89 @@
+.hero {
+  position: relative;
+  height: 80vh; 
+  background: url('../assets/hero.jpg') no-repeat;
+  background-size: cover;
+
+  background-position: center 25%; 
+
+  display: flex;
+  align-items: center;
+}
+
+/* The Overlay using your colors: 071A1F and 0D2A2F */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Gradient with 50% opacity as requested */
+  background: linear-gradient(
+    to right, 
+    rgba(7, 26, 31, 0.6), 
+    rgba(13, 42, 47, 0.6)
+  );
+}
+
+.hero-content {
+  max-width: 600px;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  letter-spacing: 1px;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #e0e0e0;
+}
+
+/* Button with color D24646 and 1px White Stroke */
+.join-btn {
+  background-color: #D24646;
+  color: white;
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 1px solid white; /* Your 1px stroke */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.join-btn:hover {
+  background-color: #b33a3a;
+  transform: scale(1.05);
+}
+
+/* The floating bar at the bottom right of the hero */
+.hero-status-bar {
+  position: absolute;
+  bottom: 50px; 
+  right: 50px;  
+  
+  background: rgba(255, 255, 255, 0.12); 
+  backdrop-filter: blur(15px);
+  
+  /* Large box size */
+  padding: 18px 45px; 
+  
+  /* Text settings: Regular weight */
+  font-size: 1rem; 
+  font-weight: 400; /* This makes it regular, not bold */
+  color: rgba(255, 255, 255, 0.85);
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.5px;
+  
+  border-radius: 15px; 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
+}
