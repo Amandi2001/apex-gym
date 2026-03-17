@@ -1,0 +1,110 @@
+.footer {
+  /* Hex #103D44 converted to RGBA with 0.6 (60%) opacity */
+  background: rgba(16, 61, 68, 0.6); 
+  color: white;
+  padding-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  backdrop-filter: blur(5px); /* Optional: adds a nice glass effect */
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 60px 40px;
+  gap: 30px;
+}
+
+.footer-col h3 {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+/* Brand Section */
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.footer-logo span {
+  color: #c3413b;
+}
+
+.brand-col p {
+  color: #bdc3c7;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  cursor: pointer;
+  color: #bdc3c7;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Contact List */
+.contact-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-col li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: #bdc3c7;
+}
+
+/* Google Map Styling */
+.map-container {
+  width: 250px;
+  height: 160px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Hours Section */
+.hours-col p {
+  color: #bdc3c7;
+  margin-bottom: 10px;
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.2); /* Slightly darker overlay */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #bdc3c7;
+}
+
+.footer-legal span:hover {
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}

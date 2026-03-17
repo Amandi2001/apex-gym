@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer"; // Import the new Footer component
 
 function Home() {
   return (
@@ -12,6 +13,7 @@ function Home() {
       <About />
       <Services />
       <Contact />
+      <Footer /> {/* Footer added at the bottom */}
     </>
   );
 }
