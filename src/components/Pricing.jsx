@@ -9,8 +9,11 @@ const Pricing = () => {
 
   return (
     <section className="pricing-section">
+      {/* Dark overlay for professional image suitability */}
+      <div className="pricing-overlay"></div>
+      
       <div className="pricing-wrapper">
-        <h2 className="section-title">Membership Plans</h2>
+        <h2 className="section-title">Membership <span>Plans</span></h2>
         <div className="pricing-grid">
           {plans.map((plan, index) => (
             <div key={index} className={`pricing-card ${plan.popular ? 'popular-plan' : ''}`}>
