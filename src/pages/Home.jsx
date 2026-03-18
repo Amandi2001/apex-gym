@@ -1,20 +1,28 @@
-import Navbar from "../components/Navbar";
-import Hero from "../components/Hero";
-import About from "../components/About";
-import Services from "../components/Services";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer"; // Import the new Footer component
+import React, { useState } from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Services from './components/Services';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import './App.css';
 
 function Home() {
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <>
-      <Navbar />
+    <div className={isDarkMode ? 'dark-theme' : 'light-theme'}>
+      <Navbar toggleTheme={toggleTheme} isDarkMode={isDarkMode} />
       <Hero />
       <About />
       <Services />
       <Contact />
-      <Footer /> {/* Footer added at the bottom */}
-    </>
+      <Footer />
+    </div>
   );
 }
 
