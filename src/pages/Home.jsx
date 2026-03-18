@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import './App.css';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import About from '../components/About';
+import Services from '../components/Services';
+import Gallery from '../components/Gallery'; // <--- ADD THIS LINE
+import Contact from '../components/Contact';
+import Footer from '../components/Footer';
+import '../App.css';
 
 function Home() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -20,6 +21,7 @@ function Home() {
       <Hero />
       <About />
       <Services />
+      <Gallery /> {/* Now React will find the component here */}
       <Contact />
       <Footer />
     </div>
