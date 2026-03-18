@@ -30,7 +30,7 @@ function Gallery() {
         <div className="gallery-bento-grid">
           {images.map((image) => (
             <div className={`gallery-card ${image.layout}`} key={image.id}>
-              <img src={image.src} alt={image.alt} />
+              <img src={image.src} alt={image.alt} loading="lazy" />
               <div className="gallery-card-overlay">
                 <div className="overlay-info">
                   <Maximize2 className="zoom-icon" size={24} />
