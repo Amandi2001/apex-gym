@@ -29,7 +29,7 @@ function Home() {
       <Trainers /> {/* New Section */}
       <Gallery />
       <Testimonials /> {/* New Section */}
-      <BMICalculator /> {/* New Section */}
+      
       <Contact />
       <Footer />
     </div>

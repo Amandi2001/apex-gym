@@ -20,13 +20,14 @@ const BMICalculator = () => {
 
   return (
     <section className="bmi-tool-section">
+      <div className="bmi-overlay"></div>
       <div className="bmi-wrapper">
-        <h2 className="section-title">BMI <span>Calculator</span></h2>
+        <h2 className="bmi-header">BMI <span>CALCULATOR</span></h2>
         <p className="bmi-subtitle">Check your health status instantly with our professional tool.</p>
         
         <form className="bmi-form" onSubmit={calculate}>
           <div className="bmi-input-group">
-            <label>Weight (kg)</label>
+            <label>WEIGHT (KG)</label>
             <input 
               type="number" 
               className="bmi-field"
@@ -37,7 +38,7 @@ const BMICalculator = () => {
           </div>
 
           <div className="bmi-input-group">
-            <label>Height (cm)</label>
+            <label>HEIGHT (CM)</label>
             <input 
               type="number" 
               className="bmi-field"
@@ -47,13 +48,13 @@ const BMICalculator = () => {
             />
           </div>
 
-          <button type="submit" className="bmi-calc-btn">Calculate Now</button>
+          <button type="submit" className="bmi-calc-btn">CALCULATE NOW</button>
         </form>
 
         {bmi && (
           <div className="bmi-feedback-result">
-            <p>Your BMI is <span>{bmi}</span></p>
-            <p className="bmi-status">Status: {msg}</p>
+            <p>YOUR BMI IS <span>{bmi}</span></p>
+            <p className="bmi-status">STATUS: {msg}</p>
           </div>
         )}
       </div>
