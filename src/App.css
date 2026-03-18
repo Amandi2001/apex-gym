@@ -281,7 +281,7 @@ body {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 80px;
+  gap: 60px;
 }
 
 /* === IMAGE SIZE & BOX FIX === */
@@ -1146,85 +1146,139 @@ body {
 }
 /* --- TRAINERS SECTION --- */
 .trainers-section { 
-  padding: 100px 20px; 
-  background-color: var(--bg-main); 
+  position: relative;
+  padding: 120px 20px; 
+  background-color: #080808; /* Deep Obsidian */
   text-align: center;
+  overflow: hidden;
 }
 
-/* Forces all cards into one clean row */
+/* Subtle gold radial glow behind the cards */
+.trainers-bg-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(212, 160, 23, 0.03) 0%, transparent 70%);
+  z-index: 1;
+}
+
+.trainers-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.trainers-subtitle {
+  color: #888;
+  margin-top: 10px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+.trainers-section .section-title span {
+  color: #D4A017; /* Gold Highlight */
+}
+
+/* --- CARDS CONTAINER --- */
 .trainer-cards-container {
   display: flex;
   justify-content: center;
-  align-items: stretch; /* Makes all cards the same height */
+  align-items: stretch;
   gap: 30px;
   flex-wrap: nowrap; 
   max-width: 1200px;
-  margin: 50px auto 0;
+  margin: 60px auto 0;
 }
 
 .trainer-profile-card {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
+  background: rgba(30, 27, 24, 0.6); /* Semi-transparent Charcoal */
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   flex: 1;
-  min-width: 280px;
-  max-width: 350px;
-  border-radius: 15px;
-  overflow: hidden; /* Keeps the zoomed image inside the card */
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  min-width: 300px;
+  max-width: 380px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
   display: flex;
   flex-direction: column;
 }
 
-/* IMAGE ADJUSTMENT: Forces same size and prevents distortion */
+/* --- IMAGE HANDLING --- */
 .trainer-img-wrapper {
+  position: relative;
   width: 100%;
-  aspect-ratio: 4 / 5; /* This ensures all images have the same professional height */
+  aspect-ratio: 1 / 1.2; /* Taller professional portrait */
   overflow: hidden;
-  background-color: #000;
 }
 
-.trainer-img-wrapper img {
+.trainer-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This is the MAGIC: it crops the image to fit perfectly without stretching */
-  object-position: center;
-  transition: transform 0.5s ease;
+  object-fit: cover;
+  transition: transform 0.8s ease;
 }
 
-/* Professional Hover Effects */
+.trainer-img-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(8, 8, 8, 0.8) 0%, transparent 40%);
+}
+
+/* --- HOVER STATE --- */
 .trainer-profile-card:hover {
-  transform: translateY(-10px);
-  border-color: var(--accent-gold);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  transform: translateY(-15px);
+  border-color: #D4A017;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 160, 23, 0.1);
 }
 
-.trainer-profile-card:hover img {
-  transform: scale(1.1); /* Subtle zoom on the photo */
+.trainer-profile-card:hover .trainer-img {
+  transform: scale(1.1);
 }
 
-/* Info Styling */
+/* --- INFO SECTION --- */
 .trainer-info {
-  padding: 25px;
+  padding: 30px 20px;
   text-align: center;
 }
 
 .trainer-info h4 {
-  color: var(--text-main);
-  font-size: 1.4rem;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.trainer-role {
-  color: var(--accent-gold); /* Gold color from your palette */
-  font-weight: 600;
-  font-size: 0.9rem;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* Mobile Responsive Fix */
+.trainer-role {
+  color: #D4A017; /* Gold */
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.trainer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.trainer-socials a {
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.trainer-socials a:hover {
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* --- RESPONSIVE --- */
 @media (max-width: 992px) {
   .trainer-cards-container {
     flex-wrap: wrap;
@@ -1232,8 +1286,9 @@ body {
   }
   .trainer-profile-card {
     min-width: 100%;
-    max-width: 400px;
+    max-width: 450px;
   }
+  .trainers-bg-glow { width: 100%; }
 }
 /* --- TESTIMONIALS SECTION --- */
 .testimonials-section {
