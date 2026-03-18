@@ -3,7 +3,11 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Services from '../components/Services';
-import Gallery from '../components/Gallery'; // <--- ADD THIS LINE
+import Pricing from '../components/Pricing'; // New
+import Trainers from '../components/Trainers'; // New
+import Gallery from '../components/Gallery';
+import Testimonials from '../components/Testimonials'; // New
+import BMICalculator from '../components/BMICalculator'; // New
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import '../App.css';
@@ -21,7 +25,11 @@ function Home() {
       <Hero />
       <About />
       <Services />
-      <Gallery /> {/* Now React will find the component here */}
+      <Pricing /> {/* New Section */}
+      <Trainers /> {/* New Section */}
+      <Gallery />
+      <Testimonials /> {/* New Section */}
+      <BMICalculator /> {/* New Section */}
       <Contact />
       <Footer />
     </div>
