@@ -71,18 +71,98 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* NAVBAR */
+/* --- NAVBAR STYLING --- */
 .navbar {
-  display: flex; justify-content: space-between; align-items: center;
-  padding: 15px 80px; background: var(--bg-main); position: sticky; top: 0; z-index: 1000;
-  border-bottom: 1px solid var(--border-color); /* Added subtle border visibility */
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  padding: 10px 60px; /* Reduced vertical padding for a slimmer look */
+  background: #0F0F0F; /* Obsidian Black */
+  position: sticky; 
+  top: 0; 
+  z-index: 1000;
+  border-bottom: 1px solid rgba(212, 160, 23, 0.2); /* Subtle Gold Border */
+  backdrop-filter: blur(10px);
 }
-.navbar-logo span { color: var(--accent-red); }
-.navbar-links { display: flex; gap: 30px; list-style: none; align-items: center; }
-.navbar-links a { text-decoration: none; color: var(--text-main); font-weight: 600; }
-.theme-btn { 
-  background: var(--accent-red); color: #000; border: none; /* Black text on gold for premium look */
-  padding: 8px 15px; border-radius: 20px; cursor: pointer; font-weight: 700;
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* LOGO IMAGE SIZE FIX */
+.logo-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%; /* Makes logo circular if preferred */
+  border: 1px solid #D4A017;
+}
+
+.navbar-logo h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.navbar-logo span { 
+  color: #D4A017; /* Gold */
+}
+
+/* LINKS SPACING FIX */
+.navbar-links { 
+  display: flex; 
+  gap: 25px; /* Balanced gap for more links */
+  list-style: none; 
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a { 
+  text-decoration: none; 
+  color: #F2F2F2; 
+  font-weight: 600; 
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.navbar-links a:hover { 
+  color: #D4A017; 
+}
+
+/* JOIN BUTTON IN NAV */
+.join-nav-btn { 
+  background: #D4A017; 
+  color: #000; 
+  border: none; 
+  padding: 8px 20px; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.join-nav-btn:hover {
+  background: #FFFFFF;
+  transform: scale(1.05);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 1100px) {
+  .navbar { padding: 10px 30px; }
+  .navbar-links { gap: 15px; }
+  .navbar-links a { font-size: 0.8rem; }
+}
+
+@media (max-width: 850px) {
+  .navbar-links, .join-nav-btn { display: none; } /* Hide on small mobile for hamburger menu later */
 }
 
 /* --- HERO SECTION --- */

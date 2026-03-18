@@ -21,8 +21,7 @@ const Trainers = () => {
   ];
 
   return (
-    <section className="trainers-section">
-      {/* Subtle background glow for depth */}
+    <section id="trainers" className="trainers-section">
       <div className="trainers-bg-glow"></div>
       
       <div className="container">

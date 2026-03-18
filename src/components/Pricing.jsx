@@ -8,8 +8,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="pricing-section">
-      {/* Dark overlay for professional image suitability */}
+    <section id="membership" className="pricing-section">
       <div className="pricing-overlay"></div>
       
       <div className="pricing-wrapper">
