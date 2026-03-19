@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# 🏋️ Apex Gym – Elite Fitness Promotional Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A high-performance, modern, and fully responsive promotional website developed for Apex Gym, a premium fitness brand.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📌 Project Overview
 
-### `npm start`
+Apex Gym’s website focuses on delivering a premium digital experience through:
+- Clean and modern UI design  
+- High-end branding (Obsidian + Gold theme)  
+- Smooth user interactions and animations  
+- Fully functional contact system  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔗 Live Links
 
-### `npm test`
+- Live Demo: https://apex-gym-eta.vercel.app/
+- Figma Design: https://www.figma.com/design/MqKxC7eXgy3XBh2E6PfxEk/Untitled
+- GitHub Repository: https://github.com/Amandi2001/apex-gym
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧰 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Frontend:
+- React.js (Functional Components & Hooks)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Styling:
+- CSS3 (Flexbox, Grid, Glassmorphism)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Libraries:
+- Lucide React
+- EmailJS
 
-### `npm run eject`
+Deployment:
+- Vercel
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ✨ Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Responsive UI design  
+- Services and trainers showcase  
+- Contact inquiry system  
+- EmailJS API integration  
+- Search & filter functionality  
+- Dark premium UI theme  
+- Form validation with success feedback  
+- Smooth animations and hover effects  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📁 Folder Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+src/
+│
+├── assets/            # Images, icons, branding assets
+├── components/        # Reusable components (Navbar, Hero, Cards, Footer)
+├── pages/             # Page-level components
+├── styles/            # CSS modules / styling files
+├── App.js             # Main application logic
+└── index.js           # Entry point
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## ⚙️ Setup Instructions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+1. Clone the repository  
+   git clone https://github.com/Amandi2001/apex-gym.git  
 
-### Analyzing the Bundle Size
+2. Navigate to project folder  
+   cd apex-gym  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Install dependencies  
+   npm install  
 
-### Making a Progressive Web App
+4. Run the project  
+   npm start
+```  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📬 Contact Form
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Fields:
+- Name  
+- Email  
+- Message  
 
-### Deployment
+Includes validation and success feedback after submission.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Deployed using Vercel  
+https://apex-gym-eta.vercel.app/
+
+---
+
+## 👨‍💻 Author
+
+Amandi Ishara  
+https://github.com/Amandi2001
