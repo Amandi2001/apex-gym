@@ -14,18 +14,18 @@
 }
 
 .App-header {
-  background-color: #0F0F0F; /* Updated to Obsidian */
+  background-color: #0F0F0F; 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #F2F2F2; /* Updated to Off-white */
+  color: #F2F2F2; 
 }
 
 .App-link {
-  color: #D4A017; /* Updated to Gold */
+  color: #D4A017; 
 }
 
 @keyframes App-logo-spin {
@@ -41,14 +41,14 @@
 
 /* THEME VARIABLES */
 :root {
-  --bg-main: #0F0F0F;          /* Updated: Obsidian Black */
-  --bg-secondary: #1E1B18;     /* Updated: Warm Dark Charcoal */
-  --text-main: #F2F2F2;        /* Updated: Off-white */
-  --text-muted: #A0A0A0;       /* Updated: Muted gray */
-  --accent-red: #D4A017;       /* Updated: Primary Gold */
-  --btn-red: #D4A017;          /* Updated: Primary Gold */
-  --card-bg: rgba(30, 27, 24, 0.8); /* Updated: Transparent Charcoal */
-  --border-color: #3D3D3D;     /* Updated: Subtle gray border */
+  --bg-main: #0F0F0F;          
+  --bg-secondary: #1E1B18;     
+  --text-main: #F2F2F2;        
+  --text-muted: #A0A0A0;       
+  --accent-red: #D4A017;      
+  --btn-red: #D4A017;          
+  --card-bg: rgba(30, 27, 24, 0.8); 
+  --border-color: #3D3D3D;     
   --input-bg: rgba(255, 255, 255, 0.05);
 }
 
@@ -76,12 +76,12 @@ body {
   display: flex; 
   justify-content: space-between; 
   align-items: center;
-  padding: 10px 60px; /* Reduced vertical padding for a slimmer look */
-  background: #0F0F0F; /* Obsidian Black */
+  padding: 10px 60px; 
+  background: #0F0F0F; 
   position: sticky; 
   top: 0; 
   z-index: 1000;
-  border-bottom: 1px solid rgba(212, 160, 23, 0.2); /* Subtle Gold Border */
+  border-bottom: 1px solid rgba(212, 160, 23, 0.2); 
   backdrop-filter: blur(10px);
 }
 
@@ -91,12 +91,12 @@ body {
   gap: 12px;
 }
 
-/* LOGO IMAGE SIZE FIX */
+/* LOGO IMAGE  */
 .logo-icon {
   width: 45px;
   height: 45px;
   object-fit: cover;
-  border-radius: 50%; /* Makes logo circular if preferred */
+  border-radius: 50%; 
   border: 1px solid #D4A017;
 }
 
@@ -109,13 +109,13 @@ body {
 }
 
 .navbar-logo span { 
-  color: #D4A017; /* Gold */
+  color: #D4A017; 
 }
 
-/* LINKS SPACING FIX */
+
 .navbar-links { 
   display: flex; 
-  gap: 25px; /* Balanced gap for more links */
+  gap: 25px; 
   list-style: none; 
   align-items: center; 
   margin: 0;
@@ -135,7 +135,7 @@ body {
   color: #D4A017; 
 }
 
-/* JOIN BUTTON IN NAV */
+
 .join-nav-btn { 
   background: #D4A017; 
   color: #000; 
@@ -162,7 +162,7 @@ body {
 }
 
 @media (max-width: 850px) {
-  .navbar-links, .join-nav-btn { display: none; } /* Hide on small mobile for hamburger menu later */
+  .navbar-links, .join-nav-btn { display: none; } 
 }
 
 /* --- HERO SECTION --- */
@@ -217,12 +217,12 @@ body {
   max-width: 700px;
 }
 
-/* --- FIXED JOIN NOW BUTTON & HOVER --- */
+
 .join-btn {
   position: relative;
-  z-index: 10; /* Ensures it is above all overlays */
-  background-color: #D4A017 !important; /* Forces Gold color */
-  color: #000000 !important; /* Deep Black text */
+  z-index: 10;
+  background-color: #D4A017 !important; 
+  color: #000000 !important;
   border: 2px solid #D4A017;
   padding: 18px 50px;
   border-radius: 4px;
@@ -236,20 +236,20 @@ body {
   outline: none;
 }
 
-/* THE HOVER EFFECT */
+
 .join-btn:hover {
-  background-color: #FFFFFF !important; /* Flashes White */
+  background-color: #FFFFFF !important; 
   border-color: #FFFFFF;
   color: #000000 !important;
-  transform: translateY(-5px); /* Moves up */
-  box-shadow: 0 15px 30px rgba(212, 160, 23, 0.4); /* Gold Glow shadow */
+  transform: translateY(-5px); 
+  box-shadow: 0 15px 30px rgba(212, 160, 23, 0.4); 
 }
 
 .join-btn:active {
   transform: translateY(-2px);
 }
 
-/* --- REST OF THE ELEMENTS --- */
+
 .hero-socials {
   position: absolute;
   left: 40px;
@@ -350,7 +350,7 @@ body {
 /* --- ABOUT SECTION --- */
 .about-section {
   padding: 100px 20px;
-  background-color: #0c0c0c; /* Obsidian Black */
+  background-color: #0c0c0c; 
   display: flex;
   justify-content: center;
   color: #ffffff;
@@ -364,7 +364,7 @@ body {
   gap: 60px;
 }
 
-/* === IMAGE SIZE & BOX FIX === */
+
 .about-visual-side {
   flex: 1;
   display: flex;
@@ -374,10 +374,10 @@ body {
 .about-image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 480px; /* Professional Width */
-  height: 520px;    /* Professional Height */
+  max-width: 480px; 
+  height: 520px;    
   border-radius: 15px;
-  border: 1px solid rgba(212, 160, 23, 0.4); /* Gold Border */
+  border: 1px solid rgba(212, 160, 23, 0.4); 
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
@@ -385,11 +385,11 @@ body {
 .about-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image isn't squashed */
+  object-fit: cover; 
   display: block;
 }
 
-/* The Experience Box at the bottom of the image */
+
 .experience-box {
   position: absolute;
   bottom: 0;
@@ -401,7 +401,7 @@ body {
 }
 
 .exp-number {
-  color: #D4A017; /* Gold */
+  color: #D4A017; 
   font-size: 2.8rem;
   font-weight: 900;
   margin: 0;
@@ -416,7 +416,7 @@ body {
   color: #ffffff;
 }
 
-/* === TEXT SIDE STYLING === */
+
 .about-text-side {
   flex: 1.2;
 }
@@ -439,7 +439,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* Feature List */
+
 .about-list {
   margin-bottom: 40px;
 }
@@ -462,7 +462,7 @@ body {
   margin: 0;
 }
 
-/* Button Styling */
+
 .about-cta {
   background: transparent;
   color: #ffffff;
@@ -494,7 +494,7 @@ body {
   width: 100%;
 }
 
-/* Mobile Fix */
+
 @media (max-width: 992px) {
   .about-container {
     flex-direction: column;
@@ -590,7 +590,7 @@ body {
   background: rgba(212, 160, 23, 0.05);
 }
 
-/* --- SERVICE CARD STYLING --- */
+
 .service-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -599,7 +599,7 @@ body {
 }
 
 .service-card {
-  position: relative; /* Required for absolute background */
+  position: relative; 
   background: #111111;
   border: 1px solid #2a2a2a; 
   border-radius: 12px;
@@ -608,27 +608,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden; /* Keeps background image inside corners */
+  overflow: hidden; 
   box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
 
-/* THE BACKGROUND IMAGE LAYER */
 .card-bg-overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0.2; /* Very low opacity to keep text clear */
-  filter: grayscale(100%); /* Makes images unified in style */
+  opacity: 0.2; 
+  filter: grayscale(100%); 
   z-index: 1;
   transition: opacity 0.4s ease, transform 0.6s ease;
 }
 
-/* THE CONTENT LAYER */
+
 .card-content {
   position: relative;
-  z-index: 2; /* Sits above the image */
+  z-index: 2; 
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -642,7 +641,7 @@ body {
 }
 
 .service-card:hover .card-bg-overlay {
-  opacity: 0.3; /* Image becomes slightly clearer on hover */
+  opacity: 0.3; 
   transform: scale(1.1);
 }
 
@@ -665,10 +664,10 @@ body {
   font-size: 0.9rem;
   line-height: 1.6;
   margin-bottom: 25px;
-  font-weight: 600; /* Bolded for better visibility over images */
+  font-weight: 600; 
 }
 
-/* --- BUTTON STYLING --- */
+
 .view-more-btn {
   background: transparent;
   color: #D4A017;
@@ -689,14 +688,15 @@ body {
   box-shadow: 0 0 15px rgba(212, 160, 23, 0.5);
 }
 
-/* Mobile Adjustments */
+
 @media (max-width: 768px) {
   .services-section { padding: 40px 15px; }
   .section-title { font-size: 2.2rem; }
 }
+
+
 /* --- GALLERY SECTION --- */
 .gallery-section {
-  /* FIXED: Reduced padding from 100px to 50px to remove massive empty space */
   padding: 50px 20px;
   background-color: #080808; 
   text-align: center;
@@ -704,7 +704,6 @@ body {
 }
 
 .gallery-header {
-  /* FIXED: Reduced margin from 50px to 30px */
   margin-bottom: 30px;
 }
 
@@ -717,7 +716,7 @@ body {
 }
 
 .gallery-section .section-title span {
-  color: #D4A017; /* Gold Highlight */
+  color: #D4A017; 
 }
 
 .gallery-subtitle {
@@ -727,12 +726,12 @@ body {
   letter-spacing: 1px;
 }
 
-/* --- THE BENTO GRID --- */
+
 .gallery-bento-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 240px; /* Balanced row height */
-  gap: 15px; /* Tighter gap for pro look */
+  grid-auto-rows: 240px; 
+  gap: 15px; 
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -758,7 +757,7 @@ body {
   transition: transform 0.6s ease;
 }
 
-/* --- OVERLAY --- */
+
 .gallery-card-overlay {
   position: absolute;
   top: 0; left: 0;
@@ -792,7 +791,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* --- INTERACTIONS --- */
+
 .gallery-card:hover {
   border-color: #D4A017;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -811,7 +810,7 @@ body {
   transform: translateY(0);
 }
 
-/* --- MOBILE RESPONSIVE --- */
+
 @media (max-width: 992px) {
   .gallery-section { padding: 40px 15px; }
   .gallery-bento-grid {
@@ -830,6 +829,8 @@ body {
     grid-row: span 1;
   }
 }
+
+
 /* --- CONTACT SECTION --- */
 .contact-section {
   position: relative;
@@ -845,7 +846,7 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(10, 10, 10, 0.92); /* Darker for better visibility */
+  background: rgba(10, 10, 10, 0.92); 
   z-index: 1;
 }
 
@@ -864,7 +865,7 @@ body {
   align-items: stretch;
 }
 
-/* --- FORM STYLING --- */
+
 .contact-form {
   flex: 1.2;
   display: flex;
@@ -895,9 +896,9 @@ body {
   outline: none;
 }
 
-/* --- UPDATED BUTTON & HOVER --- */
+
 .contact-btn {
-  background: #D4A017; /* Gold */
+  background: #D4A017; 
   color: #000;
   border: 2px solid #D4A017;
   padding: 18px;
@@ -913,14 +914,14 @@ body {
 }
 
 .contact-btn:hover {
-  background: #FFFFFF; /* High contrast White */
+  background: #FFFFFF; 
   border-color: #FFFFFF;
   color: #000;
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(255, 255, 255, 0.2);
 }
 
-/* --- STATUS PANEL (PROFESSIONAL MESSAGE) --- */
+
 .status-panel {
   flex: 0.8;
   background: rgba(20, 20, 20, 0.8);
@@ -962,7 +963,7 @@ body {
 }
 
 .success-active .status-line {
-  width: 100%; /* Loads gold bar when sent */
+  width: 100%; 
 }
 
 /* Mobile */
@@ -970,6 +971,8 @@ body {
   .contact-container { flex-direction: column; }
   .navbar { padding: 15px 30px; }
 }
+
+
 /* --- FOOTER STYLING --- */
 .footer { 
   padding: 60px 80px 0px; 
@@ -993,7 +996,7 @@ body {
   color: white;
 }
 
-/* Brand Side */
+
 .footer-logo { font-size: 1.8rem; font-weight: 800; margin-bottom: 15px; text-transform: uppercase; }
 .footer-logo span { color: var(--accent-red); }
 
@@ -1011,12 +1014,12 @@ body {
 .apex-elit { 
   font-size: 1.1rem; 
   font-weight: 600; 
-  color: var(--accent-red); /* Updated to Gold */
+  color: var(--accent-red); 
   margin: 0; 
   text-decoration: underline; 
 }
 
-/* Contact Items */
+
 .contact-item { 
   display: flex; 
   align-items: center; 
@@ -1026,7 +1029,7 @@ body {
   font-size: 0.9rem;
 }
 
-/* Map Container - Optimized for Iframe */
+
 .map-container { 
   position: relative;
   height: 170px; 
@@ -1044,7 +1047,7 @@ body {
   top: 12px;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--accent-red); /* Updated to Gold */
+  background: var(--accent-red); 
   color: #000;
   padding: 5px 15px;
   font-size: 0.7rem;
@@ -1054,10 +1057,9 @@ body {
   pointer-events: none;
 }
 
-/* Hours */
 .hours-col p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; }
 
-/* Footer Bottom Bar */
+
 .footer-bottom { 
   border-top: 1px solid rgba(255,255,255,0.05);
   background-color: rgba(0, 0, 0, 0.4); 
@@ -1080,31 +1082,31 @@ body {
   .footer-bottom { flex-direction: column; gap: 15px; text-align: center; }
 }
 
+
 /* --- PRICING SECTION --- */
 .pricing-section { 
   position: relative;
   padding: 100px 20px; 
-  /* High-quality gym background image */
   background-image: url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1920&auto=format&fit=crop');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Creates a professional scrolling effect */
+  background-attachment: fixed; 
   text-align: center;
   width: 100%;
 }
 
-/* Dark Overlay ensures cards and text are clearly visible */
+
 .pricing-overlay {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(15, 15, 15, 0.85); /* Darkens the image */
+  background: rgba(15, 15, 15, 0.85); 
   z-index: 1;
 }
 
 .pricing-wrapper {
   position: relative;
-  z-index: 2; /* Sits above the overlay */
+  z-index: 2; 
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -1118,7 +1120,7 @@ body {
 }
 
 .section-title span {
-  color: var(--accent-red); /* Gold Highlight */
+  color: var(--accent-red); 
 }
 
 .pricing-grid { 
@@ -1130,8 +1132,8 @@ body {
 }
 
 .pricing-card {
-  background: rgba(30, 27, 24, 0.95); /* Deep Charcoal with slight transparency */
-  backdrop-filter: blur(10px); /* Modern glass effect */
+  background: rgba(30, 27, 24, 0.95); 
+  backdrop-filter: blur(10px); 
   border: 1px solid #3D3D3D;
   padding: 50px 30px;
   border-radius: 20px;
@@ -1145,9 +1147,9 @@ body {
   flex-direction: column;
 }
 
-/* Popular Plan Focus */
+
 .pricing-card.popular-plan {
-  border: 2px solid var(--accent-red); /* Gold Border */
+  border: 2px solid var(--accent-red); 
   transform: scale(1.05);
   z-index: 2;
   box-shadow: 0 15px 40px rgba(212, 160, 23, 0.3);
@@ -1225,9 +1227,9 @@ body {
   text-transform: uppercase;
 }
 
-/* Improved Hover State for buttons */
+
 .pricing-buy-btn:hover {
-  background: #FFFFFF; /* Flashes white for high visibility click */
+  background: #FFFFFF; 
   transform: scale(1.02);
 }
 
@@ -1241,19 +1243,20 @@ body {
     transform: scale(1);
   }
   .pricing-section {
-      background-attachment: scroll; /* Better performance on mobile */
+      background-attachment: scroll; 
   }
 }
+
+
 /* --- TRAINERS SECTION --- */
 .trainers-section { 
   position: relative;
   padding: 120px 20px; 
-  background-color: #080808; /* Deep Obsidian */
+  background-color: #080808; 
   text-align: center;
   overflow: hidden;
 }
 
-/* Subtle gold radial glow behind the cards */
 .trainers-bg-glow {
   position: absolute;
   top: 50%;
@@ -1278,10 +1281,9 @@ body {
 }
 
 .trainers-section .section-title span {
-  color: #D4A017; /* Gold Highlight */
+  color: #D4A017; 
 }
 
-/* --- CARDS CONTAINER --- */
 .trainer-cards-container {
   display: flex;
   justify-content: center;
@@ -1293,7 +1295,7 @@ body {
 }
 
 .trainer-profile-card {
-  background: rgba(30, 27, 24, 0.6); /* Semi-transparent Charcoal */
+  background: rgba(30, 27, 24, 0.6); 
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.05);
   flex: 1;
@@ -1306,11 +1308,11 @@ body {
   flex-direction: column;
 }
 
-/* --- IMAGE HANDLING --- */
+
 .trainer-img-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1.2; /* Taller professional portrait */
+  aspect-ratio: 1 / 1.2; 
   overflow: hidden;
 }
 
@@ -1328,7 +1330,7 @@ body {
   background: linear-gradient(to top, rgba(8, 8, 8, 0.8) 0%, transparent 40%);
 }
 
-/* --- HOVER STATE --- */
+
 .trainer-profile-card:hover {
   transform: translateY(-15px);
   border-color: #D4A017;
@@ -1339,7 +1341,7 @@ body {
   transform: scale(1.1);
 }
 
-/* --- INFO SECTION --- */
+
 .trainer-info {
   padding: 30px 20px;
   text-align: center;
@@ -1354,7 +1356,7 @@ body {
 }
 
 .trainer-role {
-  color: #D4A017; /* Gold */
+  color: #D4A017; 
   font-weight: 700;
   font-size: 0.85rem;
   text-transform: uppercase;
@@ -1378,7 +1380,7 @@ body {
   transform: translateY(-3px);
 }
 
-/* --- RESPONSIVE --- */
+
 @media (max-width: 992px) {
   .trainer-cards-container {
     flex-wrap: wrap;
@@ -1390,6 +1392,8 @@ body {
   }
   .trainers-bg-glow { width: 100%; }
 }
+
+
 /* --- TESTIMONIALS SECTION --- */
 .testimonials-section {
   padding: 100px 0;
@@ -1409,7 +1413,7 @@ body {
 .testimonial-slide-track {
   display: flex;
   gap: 30px;
-  width: calc(400px * 10); /* Adjusted for slightly wider cards */
+  width: calc(400px * 10); 
   animation: scrollSlider 35s linear infinite;
 }
 
@@ -1427,24 +1431,24 @@ body {
   text-align: left;
   width: 400px;
   min-width: 400px;
-  overflow: hidden; /* Important: keeps background image inside corners */
+  overflow: hidden; 
   transition: all 0.4s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-/* LOW OPACITY BACKGROUND IMAGE */
+
 .card-bg-img {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-size: cover;
   background-position: center;
-  opacity: 0.25; /* Very low opacity so text is readable */
+  opacity: 0.25; 
   z-index: 1;
-  filter: grayscale(100%); /* Makes images look professional and unified */
+  filter: grayscale(100%); 
 }
 
-/* CONTENT CONTAINER (Must be above image) */
+
 .quote-content {
   position: relative;
   z-index: 2;
@@ -1457,7 +1461,7 @@ body {
 }
 
 .quote-card:hover .card-bg-img {
-  opacity: 0.2; /* Image lights up slightly on hover */
+  opacity: 0.2; 
   transform: scale(1.1);
   transition: 0.6s ease;
 }
@@ -1473,11 +1477,11 @@ body {
 .quote-text {
   font-style: italic;
   font-size: 1.05rem;
-  font-weight: 700; /* BOLD TEXT as requested */
+  font-weight: 700; 
   color: #ffffff; 
   line-height: 1.7;
   margin-bottom: 25px;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.8); /* Ensures text "pops" over the image */
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8); 
 }
 
 .quote-author {
@@ -1489,7 +1493,7 @@ body {
   letter-spacing: 1.5px;
 }
 
-/* THE SLIDE ANIMATION */
+
 @keyframes scrollSlider {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-400px * 5 - 150px)); }
@@ -1502,147 +1506,6 @@ body {
   }
 }
 
-/* --- BMI CALCULATOR SECTION --- */
-.bmi-tool-section { 
-  position: relative;
-  padding: 120px 20px; 
-  /* Professional Gym Background */
-  background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?q=80&w=1920&auto=format&fit=crop') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed; /* Creates parallax depth */
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-  overflow: hidden;
-}
 
-/* Dark overlay for readability */
-.bmi-overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.85); /* Makes the background image very dark */
-  z-index: 1;
-}
 
-.bmi-wrapper {
-  position: relative;
-  z-index: 2; /* Sits above the overlay */
-  background: #1a1a1a; /* Dark Card Background */
-  padding: 60px 50px;
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  max-width: 550px;
-  width: 100%;
-  text-align: center;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
-}
 
-/* Matching the large Header from your screenshot */
-.bmi-header {
-  font-size: 3.5rem;
-  font-weight: 900;
-  color: #ffffff; /* BMI in White */
-  margin-bottom: 10px;
-  letter-spacing: -1px;
-  text-transform: uppercase;
-}
-
-.bmi-header span {
-  color: #D4A017; /* CALCULATOR in Gold */
-}
-
-.bmi-subtitle {
-  color: #a0a0a0;
-  margin-bottom: 40px;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-.bmi-form {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
-.bmi-input-group {
-  text-align: left;
-}
-
-.bmi-input-group label {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: 800;
-  color: #ffffff; /* Labels in White like the screenshot */
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-
-.bmi-field {
-  width: 100%;
-  padding: 18px;
-  border-radius: 12px;
-  background: #0a0a0a; /* Deep black inputs */
-  border: 1px solid #333;
-  color: #ffffff;
-  font-size: 1.1rem;
-  box-sizing: border-box;
-  transition: 0.3s;
-}
-
-.bmi-field:focus {
-  border-color: #D4A017;
-  outline: none;
-  background: #111;
-}
-
-.bmi-calc-btn {
-  background: transparent; /* Changed to match the outline style often seen in Elite gyms */
-  color: #D4A017;
-  border: 2px solid #D4A017;
-  padding: 18px;
-  border-radius: 12px;
-  font-weight: 900;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 15px;
-  letter-spacing: 2px;
-}
-
-.bmi-calc-btn:hover {
-  background: #D4A017; /* Solid Gold on Hover */
-  color: #000;
-  transform: scale(1.02);
-  box-shadow: 0 10px 20px rgba(212, 160, 23, 0.3);
-}
-
-/* Result Box */
-.bmi-feedback-result {
-  margin-top: 40px;
-  padding: 25px;
-  border-radius: 15px;
-  background: rgba(212, 160, 23, 0.1);
-  border: 1px solid #D4A017;
-  color: #ffffff;
-}
-
-.bmi-feedback-result p {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.bmi-feedback-result span {
-  color: #D4A017;
-  font-size: 2.2rem;
-  font-weight: 900;
-}
-
-.bmi-status {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #D4A017;
-  font-size: 1rem;
-}
