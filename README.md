@@ -60,7 +60,7 @@ src/
 ├── assets/            # Images, icons, branding assets
 ├── components/        # Reusable components (Navbar, Hero, Cards, Footer)
 ├── pages/             # Page-level components
-├── styles/            # CSS modules / styling files
+├── App.css            # CSS modules / styling files
 ├── App.js             # Main application logic
 └── index.js           # Entry point
 ```
