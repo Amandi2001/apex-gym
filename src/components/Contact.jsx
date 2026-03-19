@@ -1,8 +1,27 @@
-import React, { useState } from 'react';
-import { CheckCircle, Send, Clock } from 'lucide-react';
+import React, { useState, useRef } from 'react';
+import { CheckCircle, Send, Clock, Loader2 } from 'lucide-react';
 
 function Contact() {
+  const formRef = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate an API call (like EmailJS or a backend)
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitted(true);
+      
+      // Clear the form fields after successful submission
+      formRef.current.reset();
+
+      // Optional: Reset success message after 5 seconds
+      setTimeout(() => setSubmitted(false), 5000);
+    }, 1500);
+  };
 
   return (
     <section id="contact" className="contact-section">
@@ -13,25 +32,63 @@ function Contact() {
         <p className="contact-subtitle">Expert advice is just a message away. Reach out to our elite team.</p>
         
         <div className="contact-container">
-          <form className="contact-form" onSubmit={(e) => { e.preventDefault(); setSubmitted(true); }}>
+          {/* Form with Reference for API handling */}
+          <form 
+            className="contact-form" 
+            ref={formRef} 
+            onSubmit={handleSubmit}
+          >
             <div className="input-group">
-              <input type="text" placeholder="YOUR NAME" required />
+              <input 
+                type="text" 
+                name="user_name" 
+                placeholder="YOUR NAME" 
+                required 
+                disabled={submitted}
+              />
             </div>
             <div className="input-group">
-              <input type="email" placeholder="EMAIL ADDRESS" required />
+              <input 
+                type="email" 
+                name="user_email" 
+                placeholder="EMAIL ADDRESS" 
+                required 
+                disabled={submitted}
+              />
             </div>
             <div className="input-group">
-              <textarea placeholder="MESSAGE" rows="5" required></textarea>
+              <textarea 
+                name="message" 
+                placeholder="MESSAGE" 
+                rows="5" 
+                required 
+                disabled={submitted}
+              ></textarea>
             </div>
-            <button type="submit" className="contact-btn">
-              {submitted ? "MESSAGE RECEIVED" : "SEND MESSAGE"} 
-              <Send size={18} style={{marginLeft: '10px'}} />
+
+            <button 
+              type="submit" 
+              className={`contact-btn ${submitted ? 'btn-success' : ''}`}
+              disabled={isSubmitting || submitted}
+            >
+              {isSubmitting ? (
+                <>SENDING... <Loader2 className="spinner" size={18} /></>
+              ) : submitted ? (
+                <>MESSAGE RECEIVED <CheckCircle size={18} /></>
+              ) : (
+                <>SEND MESSAGE <Send size={18} /></>
+              )}
             </button>
           </form>
           
+          {/* Status Panel with dynamic classes */}
           <div className={`status-panel ${submitted ? 'success-active' : ''}`}>
             <div className="status-header">
-              {submitted ? <CheckCircle size={40} color="#D4A017" /> : <Clock size={40} color="#555" />}
+              {submitted ? (
+                <CheckCircle size={45} className="status-icon success" />
+              ) : (
+                <Clock size={45} className="status-icon pending" />
+              )}
             </div>
             <div className="status-content">
               <h3>{submitted ? "SUCCESS" : "SYSTEM READY"}</h3>
