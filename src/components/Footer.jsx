@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer-grid">
-        {/* Brand Column */}
+        
         <div className="footer-col brand-col">
           <h2 className="footer-logo">APEX <span>GYM</span></h2>
           <p>Reach Your Peak. <br /> Transform Your Life.</p>
@@ -18,7 +18,6 @@ function Footer() {
           <h3 className="apex-elit">APEX Elit</h3>
         </div>
 
-        {/* Contact Column */}
         <div className="footer-col contact-col">
           <h3>Contact & Find Us</h3>
           <div className="contact-item">
@@ -35,7 +34,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Map Column - FIXED GOOGLE MAP URL */}
+      
         <div className="footer-col map-col">
           <div className="map-container">
             <iframe 
@@ -52,7 +51,7 @@ function Footer() {
           </div>
         </div>
 
-        {/* Hours Column */}
+        
         <div className="footer-col hours-col">
           <h3>Hours</h3>
           <p>Mon-Fri: 5.00A.M - 10.00 P.M</p>
@@ -60,7 +59,7 @@ function Footer() {
         </div>
       </div>
 
-      {/* Bottom Legal Bar */}
+      
       <div className="footer-bottom">
         <div className="legal-links">
           <span>Privacy policy</span> | <span>Terms Of Services</span> | <span>Membership Agreement</span>
