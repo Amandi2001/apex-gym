@@ -10,15 +10,15 @@ function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate an API call (like EmailJS or a backend)
+    
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
       
-      // Clear the form fields after successful submission
+     
       formRef.current.reset();
 
-      // Optional: Reset success message after 5 seconds
+      
       setTimeout(() => setSubmitted(false), 5000);
     }, 1500);
   };
@@ -32,7 +32,7 @@ function Contact() {
         <p className="contact-subtitle">Expert advice is just a message away. Reach out to our elite team.</p>
         
         <div className="contact-container">
-          {/* Form with Reference for API handling */}
+          
           <form 
             className="contact-form" 
             ref={formRef} 
@@ -81,7 +81,7 @@ function Contact() {
             </button>
           </form>
           
-          {/* Status Panel with dynamic classes */}
+         
           <div className={`status-panel ${submitted ? 'success-active' : ''}`}>
             <div className="status-header">
               {submitted ? (
