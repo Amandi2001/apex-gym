@@ -24,7 +24,7 @@ const Hero = () => {
       style={{ backgroundImage: `url(${images[currentImg]})` }}
     >
       <div className="hero-overlay">
-        {/* Social Sidebar */}
+       
         <div className="hero-socials">
           <Facebook size={20} className="social-icon" />
           <Instagram size={20} className="social-icon" />

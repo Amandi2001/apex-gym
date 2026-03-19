@@ -62,13 +62,13 @@ function Services() {
         <div className="service-grid">
           {filteredServices.map((service) => (
             <div className="service-card" key={service.id}>
-              {/* Background Image Layer */}
+             
               <div 
                 className="card-bg-overlay" 
                 style={{ backgroundImage: `url(${service.bgImg})` }}
               ></div>
               
-              {/* Content Layer */}
+              
               <div className="card-content">
                 <div className="icon-box">{service.icon}</div>
                 <h3 className="card-title">{service.title}</h3>

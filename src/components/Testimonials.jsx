@@ -40,7 +40,7 @@ const Testimonials = () => {
           <div className="testimonial-slide-track">
             {scrollReviews.map((r, i) => (
               <div key={i} className="quote-card">
-                {/* BACKGROUND IMAGE FOR THE CARD */}
+                
                 <div 
                   className="card-bg-img" 
                   style={{ backgroundImage: `url(${r.image})` }}
