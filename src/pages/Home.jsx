@@ -7,7 +7,7 @@ import Pricing from '../components/Pricing'; // New
 import Trainers from '../components/Trainers'; // New
 import Gallery from '../components/Gallery';
 import Testimonials from '../components/Testimonials'; // New
-import BMICalculator from '../components/BMICalculator'; // New
+
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import '../App.css';
@@ -25,10 +25,10 @@ function Home() {
       <Hero />
       <About />
       <Services />
-      <Pricing /> {/* New Section */}
-      <Trainers /> {/* New Section */}
+      <Pricing />
+      <Trainers /> 
       <Gallery />
-      <Testimonials /> {/* New Section */}
+      <Testimonials /> 
       
       <Contact />
       <Footer />
