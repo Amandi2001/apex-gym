@@ -111,7 +111,3 @@ https://apex-gym-eta.vercel.app/
 
 ---
 
-## 👨‍💻 Author
-
-Amandi Ishara  
-https://github.com/Amandi2001
