@@ -2,6 +2,12 @@
 
 A high-performance, modern, and fully responsive promotional website developed for Apex Gym, a premium fitness brand.
 
+## Screenshots
+
+| Home Page (Desktop) | Mobile Responsive View |
+|---|---|
+| <img width="1911" height="932" alt="Image" src="https://github.com/user-attachments/assets/730009b5-190c-4a87-95ba-bf373062f2d0" /> |<img width="1890" height="913" alt="Image" src="https://github.com/user-attachments/assets/46267ee2-7aaf-4e93-8755-e55a5d224e34" /> |
+
 ---
 
 ## 📌 Project Overview
