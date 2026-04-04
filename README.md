@@ -1,16 +1,18 @@
-# 🏋️ Apex Gym – Elite Fitness Promotional Website
+# Apex Gym – Elite Fitness Promotional Website
 
 A high-performance, modern, and fully responsive promotional website developed for Apex Gym, a premium fitness brand.
 
 ## Screenshots
 
-| Home Page (Desktop) | Mobile Responsive View |
-|---|---|
-| <img width="1911" height="932" alt="Image" src="https://github.com/user-attachments/assets/730009b5-190c-4a87-95ba-bf373062f2d0" /> |<img width="1890" height="913" alt="Image" src="https://github.com/user-attachments/assets/46267ee2-7aaf-4e93-8755-e55a5d224e34" /> |
+Home Page 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/551eeda0-e0e7-496c-b600-ff3388064577" alt="Apex Gym Full Showcase" width="100%">
+</p> 
+
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Apex Gym’s website focuses on delivering a premium digital experience through:
 - Clean and modern UI design  
@@ -20,7 +22,7 @@ Apex Gym’s website focuses on delivering a premium digital experience through:
 
 ---
 
-## 🔗 Live Links
+## Live Links
 
 - Live Demo: https://apex-gym-eta.vercel.app/
 - Figma Design: https://www.figma.com/design/MqKxC7eXgy3XBh2E6PfxEk/Untitled
@@ -28,7 +30,7 @@ Apex Gym’s website focuses on delivering a premium digital experience through:
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 Frontend:
 - React.js (Functional Components & Hooks)
@@ -45,7 +47,7 @@ Deployment:
 
 ---
 
-## ✨ Features
+## Features
 
 - Responsive UI design  
 - Services and trainers showcase  
@@ -58,7 +60,7 @@ Deployment:
 
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```bash
 src/
@@ -73,7 +75,7 @@ src/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 ```bash
 1. Clone the repository  
@@ -91,7 +93,7 @@ src/
 
 ---
 
-## 📬 Contact Form
+## Contact Form
 
 Fields:
 - Name  
@@ -102,7 +104,7 @@ Includes validation and success feedback after submission.
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 Deployed using Vercel  
 https://apex-gym-eta.vercel.app/
